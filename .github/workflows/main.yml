@@ -18,6 +18,7 @@ jobs:
         with:  
          distribution: 'temurin' # See 'Supported distributions' for available options
          java-version: '11'
+         node-version: '20' 
 
       # Setup sonar-scanner
       - name: Setup SonarQube
