@@ -13,6 +13,12 @@ jobs:
       - name: Checkstyle
         run: mvn checkstyle:checkstyle
 
+      # Setup Node.js 20
+      - name: Set Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
       # Setup java 11 to be default (sonar-scanner requirement as of 5.x)
       - name: Set Java 11
         uses: actions/setup-java@v3
