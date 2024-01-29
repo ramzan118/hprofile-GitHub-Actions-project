@@ -12,18 +12,19 @@ jobs:
 
       - name: Checkstyle
         run: mvn checkstyle:checkstyle
-       # Setup java 11 to be default (sonar-scanner requirement as of 5.x)
+
+      # Setup java 11 to be default (sonar-scanner requirement as of 5.x)
       - name: Set Java 11
         uses: actions/setup-java@v3
         with:
          distribution: 'temurin' # See 'Supported distributions' for available options
          java-version: '11'
 
-   # Setup sonar-scanner
+    # Setup sonar-scanner
       - name: Setup SonarQube
         uses: warchant/setup-sonar-scanner@v7
-  
-   # Run sonar-scanner
+   
+    # Run sonar-scanner
       - name: SonarQube Scan
         run: sonar-scanner
            -Dsonar.host.url=${{ secrets.SONAR_URL }}
@@ -35,3 +36,5 @@ jobs:
            -Dsonar.jacoco.reportsPath=target/jacoco.exec 
            -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml
            -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/
+
+    
