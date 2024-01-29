@@ -24,7 +24,7 @@ jobs:
 
       # Setup sonar-scanner
       - name: Setup SonarQube
-        uses: warchant/setup-sonar-scanner@v8  # Updated to v8 to use Node.js 20
+        uses: warchant/setup-sonar-scanner@v1  # Using the latest available version
    
       # Run sonar-scanner
       - name: SonarQube Scan
